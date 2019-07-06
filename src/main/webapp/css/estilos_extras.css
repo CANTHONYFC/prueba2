@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+.btn-notify {
+ color:white;
+ background-color: #6bc53b;
+ border-color: #449d44;
+}
+.btn-notify:hover {
+ color:white;
+ background-color: #449d44;
+ border-color: #398439;
+}
+
+.modal-bg-success{
+	 color:white;
+background-color: #6bc53b;
+}

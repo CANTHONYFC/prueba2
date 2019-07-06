@@ -1,0 +1,509 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09/06/2017, 11:34:34 AM
+    Author     : sistem02user
+*/
+
+.ui-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-radius: 6px;
+    /*border: 1px solid transparent;*/
+    outline: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    .ui-dialog {
+        width: 90%!important;
+    }
+}
+.ui-dialog-titlebar {
+    position: relative;
+    /*padding: 20px;*/
+    padding: 0px;
+    padding-bottom: 0;
+}
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+.ui-dialog-title {
+    /*float: left;*/
+    float: none !important;
+    font-size: 15px;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ui-dialog-titlebar-close {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    right: 20px;
+    /*top: 50%;*/
+    top: 28%;
+    padding: 0;
+    margin-top: 2px;
+}
+.ui-dialog-titlebar-close:after {
+    /*content: '\ed6b';*/
+    content: '';
+    font-family: 'Icomoon';
+    display: block;
+    width: 16px;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ui-dialog-titlebar-close.ui-state-hover,
+.ui-dialog-titlebar-close.ui-state-focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+    display: none;
+}
+
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    /* padding: .5em 1em; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: none;
+    overflow: auto;
+}
+/* .ui-dialog-content .form-group:last-child,
+.ui-dialog-content p:last-child {
+    margin-bottom: 0;
+}*/
+.ui-dialog-buttonpane {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.ui-widget-content {
+    /*border: 1px solid #e5e5e5;*/
+    background: #F5F5F5;
+    /* color: #333333; */
+    /*font-family: "Open Sans", sans-serif;*/
+    /*color: #636E7B;*/
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.ui-front {
+    z-index: 2001;
+}
+
+.ui-helper-clearfix {
+    min-height: 0;
+}
+.ui-helper-clearfix:after {
+    clear: both;
+}
+.ui-helper-clearfix::before, .ui-helper-clearfix::after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+}
+
+.ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: right;
+}
+.ui-dialog-buttonpane button + button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.widget-color-blue {
+    border-color: #1c84c6;
+}
+
+.widget-color-blue > .widget-header {
+    background: #1c84c6;
+    border-color: #1c84c6;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.widget-color-yellow {
+    border-color: #E9C341;
+}
+
+.widget-color-yellow > .widget-header {
+    background: #E9C341;
+    border-color: #E9C341;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.widget-color-green {
+    border-color: #8CC152;
+}
+
+.widget-color-green > .widget-header {
+    background: #1ab394;
+    border-color: #1ab394;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.white{
+    color: #ffffff !important;
+}
+
+.bigger-110 {
+    font-size: 110% !important;
+}
+.bigger-120 {
+    font-size: 120% !important;
+}
+.bigger-130 {
+    font-size: 130% !important;
+}
+.bigger-140 {
+    font-size: 140% !important;
+}
+.bigger-150 {
+    font-size: 150% !important;
+}
+.bigger-160 {
+    font-size: 160% !important;
+}
+.bigger-170 {
+    font-size: 170% !important;
+}
+.bigger-180 {
+    font-size: 180% !important;
+}
+.bigger-190 {
+    font-size: 190% !important;
+}
+.bigger-200 {
+    font-size: 200% !important;
+}
+.bigger-210 {
+    font-size: 210% !important;
+}
+.bigger-220 {
+    font-size: 220% !important;
+}
+.bigger-230 {
+    font-size: 230% !important;
+}
+.bigger-240 {
+    font-size: 240% !important;
+}
+.bigger-250 {
+    font-size: 250% !important;
+}
+.bigger-260 {
+    font-size: 260% !important;
+}
+.bigger-270 {
+    font-size: 270% !important;
+}
+.bigger-280 {
+    font-size: 280% !important;
+}
+.bigger-290 {
+    font-size: 290% !important;
+}
+.bigger-300 {
+    font-size: 300% !important;
+}
+.bigger-115 {
+    font-size: 115% !important;
+}
+.bigger-125 {
+    font-size: 125% !important;
+}
+.bigger-175 {
+    font-size: 175% !important;
+}
+.bigger-225 {
+    font-size: 225% !important;
+}
+.bigger-275 {
+    font-size: 275% !important;
+}
+.smaller-90 {
+    font-size: 90% !important;
+}
+.smaller-80 {
+    font-size: 80% !important;
+}
+.smaller-70 {
+    font-size: 70% !important;
+}
+.smaller-60 {
+    font-size: 60% !important;
+}
+.smaller-50 {
+    font-size: 50% !important;
+}
+.smaller-40 {
+    font-size: 40% !important;
+}
+.smaller-30 {
+    font-size: 30% !important;
+}
+.smaller-20 {
+    font-size: 20% !important;
+}
+.smaller-75 {
+    font-size: 75% !important;
+}
+
+.btn-blue {
+    color: #FFF;
+    background-color: #337AB7;
+    border-color: #337AB7;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+    color: #FFF !important;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-highlight a {
+    background: #743620 none;
+    color: white;
+}
+
+.hover tbody tr:hover {
+    background-color: #f6f6f6;
+}
+
+
+/*.ui-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-radius: 3px;
+    /*border: 1px solid transparent;* /
+    outline: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .ui-dialog {
+        width: 90%!important;
+    }
+}
+
+.ui-dialog-titlebar {
+    position: relative;
+    /*padding: 20px;* /
+    padding: 0px;
+    padding-bottom: 0;
+}
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+.ui-dialog-title {
+    /*float: left;* /
+    float: none !important;
+    font-size: 15px;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ui-dialog-titlebar-close {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    right: 20px;
+    /*top: 50%;* /
+    top: 35%;
+    padding: 0;
+    margin-top: 2px;
+}
+.ui-dialog-titlebar-close:after {
+    content: '\ed6b';
+    font-family: 'Icomoon';
+    display: block;
+    width: 16px;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ui-dialog-titlebar-close.ui-state-hover,
+.ui-dialog-titlebar-close.ui-state-focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    /* padding: .5em 1em; * /
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    background: none;
+    overflow: auto;
+}
+
+
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.ui-widget-content {
+    background: #F5F5F5;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+.ui-front {
+    z-index: 1040;
+}
+
+.ui-button-text-icon-primary .ui-button-icon-primary,
+.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-icon-primary .ui-button-icons-only {
+    margin-right: 7px;
+}
+.ui-button-text-icon-secondary .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+    margin-left: 7px;
+}
+
+.ui-button-icon-only {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+    display: none;
+}
+
+.ui-buttonset {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.ui-buttonset .ui-button {
+    border-radius: 0;
+    margin-left: -1px;
+    float: left;
+}
+.ui-buttonset .ui-button:first-child,
+.ui-buttonset .ui-helper-hidden-accessible:first-child + .ui-button {
+    margin-left: 0;
+}
+.ui-buttonset .ui-button:first-child,
+.ui-buttonset .ui-helper-hidden-accessible:first-child + .ui-button:not(:last-child) {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.ui-buttonset .ui-button:last-child {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.ui-buttonset-split {
+    position: relative;
+    display: inline-block;
+}
+.ui-buttonset-split > ul {
+    position: absolute;
+    text-align: left;
+    min-width: 180px;
+}
+
+.ui-helper-clearfix {
+    min-height: 0;
+}
+
+.ui-dialog-buttonpane {
+    /*    padding: 20px;
+        padding-top: 0;* /
+    padding: 13px;
+    padding-top: 13px;
+    border-top: 1px solid #ddd;
+}
+
+.ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: right;
+}
+.ui-dialog-buttonpane button + button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.white{
+    color: #ffffff !important;
+}
+
+.widget-color-blue {
+    border-color: #337AB7;
+}
+
+.widget-color-blue > .widget-header {
+    background: #1c84c6;
+    border-color: #1c84c6;
+    /* padding: 10px; * /
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}*/
+
+
+
